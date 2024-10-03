@@ -1,12 +1,8 @@
-// components/Footer.js
-import styles from '../styles/Footer.module.css';
-
-export default function Footer() {
-  return (
-    <footer className={styles.footer}>
-      <p>&copy; 
-        ASSALOMU ALAYKUM
-      </p>
+const Footer = () => (
+    <footer style={{ textAlign: 'center', padding: '20px', backgroundColor: '#000000', color: '#0400ff' }}>
+      <p>@ETO TVOY BMW</p>
     </footer>
   );
-}
+  
+  export default Footer;
+  

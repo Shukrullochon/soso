@@ -1,15 +1,16 @@
-// components/Navbar.js
 import Link from 'next/link';
-import styles from '../styles/Navbar.module.css';
 
-export default function Navbar() {
-  return (
-    <nav className={styles.nav}>
-      <ul>
-        <il >YOUTUB</il>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/register">Register SHU IKKINCHI PAGE</Link></li>
-      </ul>
-    </nav>
-  );
-}
+const Navbar = () => (
+  <nav style={{ padding: '10px', backgroundColor: '#000000', color: '#0400ff' }}>
+    <ul style={{ display: 'flex', justifyContent: 'space-around', listStyle: 'none' }}>
+      <li><Link href="/">BMW</Link></li>
+      <li><Link href="#categories">С удовольствием за рулем</Link></li>
+      <li><Link href="#about">ВСЕ МЕНЯЕТСЯ. ЦЕННОСТИ ОСТАЮТСЯ.</Link></li>
+      <li><Link href="#products">Categories</Link></li>
+      <li><Link href="#testimonials">Запись на сервис</Link></li>
+      <li><Link href="#contact">Больше о BMW</Link></li>
+    </ul>
+  </nav>
+);
+
+export default Navbar;

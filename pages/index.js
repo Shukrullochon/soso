@@ -1,12 +1,27 @@
-import Layout from "./components/Layout";
+import Navbar from './components/Navbar';
+
+import Main from './components/Main';
+ 
+import Categories from './components/Categories';
+
+import Products from './components/Products';
+import Testimonials from './components/Testimonials';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <Layout>
-      <h1>Welcome to the Home </h1>
-      <p>This is the homepage content.</p>
+    <>
+      <Navbar />
+      <Main />
+      <Categories />
       
-    </Layout>
+      <Products />
+      <Testimonials />
+      <ContactUs />
+      <Footer />
+    </>
   );
 }
+
 
